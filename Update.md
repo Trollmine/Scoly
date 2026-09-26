@@ -1,3 +1,13 @@
+# Scoly 5.2.7
+
+## 5.2.7 — Parent sync and Scoly administration
+
+- Fixed parent-account synchronization so every renewed session reselects and verifies the active child before reading data; a missing child now preserves the cache instead of silently importing the first child's data.
+- Kept the custom account strictly local by blocking manual and background PRONOTE refreshes until a linked child is selected.
+- Rebuilt the license administration dashboard with the Scoly purple/coral visual system, responsive license cards, matching dialogs and automatic dark mode.
+- Moved update metadata to `Trollmine/Scoly` and renamed the downloadable Android package to `Scoly.apk`.
+- Updated Android to version **5.2.7**, `versionCode 88`.
+
 # Scoly 5.2.6
 
 ## 5.2.6 — Interface consistency
