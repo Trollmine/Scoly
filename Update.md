@@ -1,3 +1,10 @@
+# Scoly 5.2.9
+
+## 5.2.9 — Unified Scoly coral
+
+- Replaced the old dark coral fill token with the brighter original coral across every Scoly component that uses it, including headers, action buttons, drawer accents, personal pages, unread badges and the administration dashboard.
+- Updated Android to version **5.2.9**, `versionCode 90`.
+
 # Scoly 5.2.8
 
 ## 5.2.8 — Grade synchronization polish
