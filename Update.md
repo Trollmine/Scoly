@@ -1,3 +1,15 @@
+# Scoly 5.2.6
+
+## 5.2.6 — Interface consistency
+
+- Unified Timetable, Grades, Carnet and cafeteria previous/current/next selectors with one rounded Scoly component.
+- Restyled Agenda, opened discussions, message cards, Information details and cafeteria cards for Scoly Light and Dark.
+- Removed remaining white PRONOTE surfaces and fixed inherited dark-on-dark text, icon tints and nested card contrast across menu pages.
+- Standardized Homepage card typography, icon treatments and every **View all** arrow.
+- Fixed dynamic French labels including the Homepage greeting, Personal Todo, View all, synchronization metadata and discussion counts.
+- Preserved the existing PROnote Classic presentation and all synchronization/data behavior.
+- Updated Android to version **5.2.6**, `versionCode 87`.
+
 # Scoly 5.2.5
 
 ## 5.2.5 — My School Day completion
