@@ -1,3 +1,11 @@
+# Scoly 5.2.8
+
+## 5.2.8 — Grade synchronization polish
+
+- Restored the brighter coral Scoly app header.
+- Grade synchronization now upserts saved grades and uses stable notification identities, preventing unchanged grades from being announced again.
+- Updated Android to version **5.2.8**, `versionCode 89`.
+
 # Scoly 5.2.7
 
 ## 5.2.7 — Parent sync and Scoly administration
