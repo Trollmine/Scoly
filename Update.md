@@ -1,3 +1,12 @@
+# Scoly 5.3.7
+
+## 5.3.7 — Independent school menu refresh
+
+- Refresh menus loads a configured school page or PDF directly without opening a PRONOTE session. With no source configured, it uses PRONOTE menus.
+- Fixed the Android PDF response being rejected as a stale PRONOTE request. Account changes and authentication cooldowns no longer block the public menu download.
+- Kept the last saved menus if the source download or PDF parsing fails.
+- Updated Android to version **5.3.7**, `versionCode 98`.
+
 # Scoly 5.3.6
 
 ## 5.3.6 — Real parent-child request scoping
