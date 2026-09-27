@@ -1,3 +1,27 @@
+# Scoly 5.3.2
+
+## 5.3.2 — Student synchronization restored
+
+- Restored the login-first student-account flow that worked before multiple parent/child profiles were added.
+- Student accounts now use the current resource returned by PRONOTE and automatically repair a stale locally saved resource ID.
+- Kept strict child matching only for actual parent accounts, preventing the parent safety rule from blocking a normal student account.
+- A timetable, homework, grade, Communication or cafeteria page-session expiry now reconnects and retries without falsely rejecting the whole saved account.
+- Cleared the erroneous authentication pause created by affected builds once, while retaining protection for a genuinely rejected renewable login.
+- Allowed linked student accounts with damaged/missing local profile metadata to rebuild that metadata during synchronization.
+- Added regression coverage for student-resource repair, category-page renewal, authentication cooldown and reconnect races.
+- Updated Android to version **5.3.2**, `versionCode 93`.
+
+# Scoly 5.3.1
+
+## 5.3.1 — Reliable PRONOTE reconnect
+
+- Fixed the race where an automatic synchronization using the old token could fail after a successful ENT reconnect and incorrectly pause the newly linked session.
+- Added session generations: old JavaScript and Android-network responses are invalidated as soon as account linking starts and can no longer overwrite new authentication state.
+- Serialized the ENT, QR and direct-credential completion paths with the synchronization queue instead of discarding the website callback while another sync is busy.
+- Suspended automatic synchronization throughout account linking and added a clean cancellation callback when the ENT screen is closed.
+- Added regression coverage for both the authentication cooldown and the late-old-session reconnect race.
+- Updated Android to version **5.3.1**, `versionCode 92`.
+
 # Scoly 5.3.0
 
 ## 5.3.0 — Grades+
