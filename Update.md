@@ -1,3 +1,14 @@
+# Scoly 5.3.6
+
+## 5.3.6 — Real parent-child request scoping
+
+- Fixed the remaining parent-account failure where the selected child appeared correctly but every PRONOTE data page rejected the request.
+- Added the active child as PRONOTE's required `membre` signature on timetable, homework, Student Administration, grades, Communication and cafeteria requests.
+- Applied child scoping inside the Pawnote request layer so reconnects and category retries cannot lose the selected child.
+- Kept normal student-account request payloads unchanged.
+- Added request-level regression coverage for every synchronized parent data category.
+- Updated Android to version **5.3.6**, `versionCode 97`.
+
 # Scoly 5.3.5
 
 ## 5.3.5 — Parent account connection repair
