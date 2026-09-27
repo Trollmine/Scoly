@@ -1,3 +1,16 @@
+# Scoly 5.3.0
+
+## 5.3.0 — Grades+
+
+- Added a richer Grades dashboard with official and estimated averages, counted-grade totals, overall and per-subject evolution graphs, and comparisons across real historical periods.
+- Added scale- and coefficient-aware estimates that ignore non-numeric, optional, bonus and zero-coefficient assessments without changing PRONOTE's official averages.
+- Added subject statistics, class statistics only when supplied by PRONOTE, richer assessment details and attachment access.
+- Added a fully local grade simulator with custom scales and coefficients, editing, removal, reset and estimated impact, plus a compact Grades+ homepage summary.
+- Added French/English presentation across Light, Dark and PROnote Classic themes.
+- Prevented rejected or expired PRONOTE sessions from triggering repeated hidden login attempts: automatic sync now pauses locally after an authentication rejection and keeps all offline data.
+- Cafeteria refresh now retains cached menus and can use the configured school page/PDF fallback even while PRONOTE authentication is unavailable.
+- Updated Android to version **5.3.0**, `versionCode 91`.
+
 # Scoly 5.2.9
 
 ## 5.2.9 — Unified Scoly coral
