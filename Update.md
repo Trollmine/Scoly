@@ -1,3 +1,29 @@
+# Scoly 5.4.4
+
+## 5.4.4 — Drawer polish
+
+- Moved Cafeteria into the main School menu.
+- Gave every item in the More panel the same subtle separator, including the first item of each group.
+- Updated Android to version **5.4.4**, `versionCode 103`.
+
+# Scoly 5.4.3
+
+## 5.4.3 — Clearer More panel
+
+- More now opens a separate panel with a back button and three short sections: School services, Communication, and App & account.
+- Removed duplicate menu and ALISE shortcuts and placeholder report pages from Scoly’s drawer. Cafeteria actions remain accessible through Self, and the report links remain in PROnote Classic.
+- Kept the six main destinations and the unchanged PROnote Classic navigation.
+- Updated Android to version **5.4.3**, `versionCode 102`.
+
+# Scoly 5.4.2
+
+## 5.4.2 — Drawer organization
+
+- Reorganized Scoly’s right drawer into six main destinations and a collapsed More section for secondary school pages and settings.
+- My School Day replaces My Todo in the main menu; My Todo remains accessible at the top of My School Day.
+- Removed nonfunctional placeholder entries and unused rail icons from the Scoly drawer. PROnote Classic keeps its existing navigation.
+- Updated Android to version **5.4.2**, `versionCode 101`.
+
 # Scoly 5.4.1
 
 ## 5.4.1 — Calendar+ polish
