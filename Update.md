@@ -1,3 +1,12 @@
+# Scoly 5.6.0
+
+## 5.6.0 — Find Everything
+
+- Added one fast, offline global search across classes, homework, assessments, discussions, Information & Surveys, personal todos/events, Things to Bring, and calendar items.
+- Added grouped results, quick category filters, accent-insensitive matching, local recent searches, and direct navigation to existing item screens.
+- Search reads the existing synchronized/local stores in memory and never starts a PRONOTE request.
+- Added complete French/English presentation for Scoly Light, Dark, and PROnote Classic.
+
 # Scoly 5.5.4
 
 ## 5.5.4 — Update metadata repair
