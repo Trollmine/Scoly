@@ -1,3 +1,25 @@
+# Scoly 5.5.4
+
+## 5.5.4 — Update metadata repair
+
+- Aligned the app, updater, release notes and Android build metadata on version **5.5.4**, `versionCode 109`.
+- The update checker now treats `version.json` as authoritative and safely hides stale release notes instead of displaying a metadata-mismatch error.
+- Includes the widget previews and centralized, properly padded notification settings from 5.5.2–5.5.3.
+
+# Scoly 5.5.3
+
+## 5.5.3 — Notification settings polish
+
+- Centralized persistent course, course/grade and cafeteria reservation notification controls under Settings → Notifications.
+- Improved spacing and padding for notification-setting cards.
+
+# Scoly 5.5.2
+
+## 5.5.2 — Widget previews and Settings
+
+- Added distinct launcher previews and localized names for all three widgets.
+- Moved the persistent Next Course notification control out of Appearance and into Settings → Notifications.
+
 # Scoly 5.5.1
 
 ## 5.5.1 — Android build fix
