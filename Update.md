@@ -1,3 +1,31 @@
+# Scoly 5.8.2
+
+## 5.8.2 — Current-week insights
+
+- Workload and class-time totals, distributions and charts now use only the current Monday–Sunday week.
+- Removed cache-dependent “per saved week,” saved-range and busiest-saved-week statistics.
+- Replaced them with actual current-week item counts, class hours, class counts, average class duration and daily breakdowns.
+- Preserved historical grading-period trends, which remain meaningful for academic comparisons.
+
+# Scoly 5.8.1
+
+## 5.8.1 — Insights clarity
+
+- Replaced unexplained normalized chart numbers with actual grades, item counts and class hours.
+- Added concise explanations for performance, workload, subject distribution and weekly class-time charts.
+- Subject distribution now shows both saved hours and the real share of total saved class time.
+- Long subject names wrap above their bars on narrow screens instead of overlapping them.
+
+# Scoly 5.8.0
+
+## 5.8.0 — Insights & Goals
+
+- Added an offline Insights dashboard for official/estimated grade trends, workload, busiest saved days and weeks, homework completion when known, and saved class-time distribution.
+- Added local subject and period grade goals with edit/delete controls and clearly labelled current or estimated progress.
+- Connected Grade Simulator scenarios to goals as estimates without changing or predicting official PRONOTE averages.
+- Calculations reuse existing cached data, grade scales, coefficients and exclusion rules; missing dates, invalid durations and cancelled classes are not invented or counted.
+- Added French/English copy and Scoly Light/Dark plus PROnote Classic-compatible navigation.
+
 # Scoly 5.7.3
 
 ## 5.7.3 — Progress widget and Homepage fix
