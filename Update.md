@@ -1,3 +1,39 @@
+# Scoly 5.7.3
+
+## 5.7.3 — Progress widget and Homepage fix
+
+- Added a resizable School Year Progress Android widget with percentage, progress bar, completed/remaining days, milestone and current-period progress.
+- The widget uses the existing offline progress dates and preferences, refreshes after saved data changes and recalculates daily without starting another sync system.
+- Tapping the widget opens Settings directly at School Year Progress.
+- Fixed disabling Quick Shortcuts so both Communication and Cafeteria disappear from the Homepage.
+
+# Scoly 5.7.2
+
+## 5.7.2 — Settings navigation polish
+
+- The School Year Progress card's Edit button now opens Personalization directly at the relevant controls.
+- Settings automatically scrolls the active tab into the best visible position, including the far-right Personalization tab.
+- Preserved the drag ordering, centered switches and card-spacing fixes from 5.7.1.
+
+# Scoly 5.7.1
+
+## 5.7.1 — Your Scoly polish
+
+- Replaced the Homepage editor's arrow buttons with press-and-drag ordering from the three-line handle.
+- Added smooth automatic scrolling when a dragged card reaches the top or bottom of the editor.
+- Centered switch thumbs consistently and moved the School Year Progress Edit button into a properly padded header layout.
+- Updated French/English accessibility labels and Android release metadata.
+
+# Scoly 5.7.0
+
+## 5.7.0 — Your Scoly
+
+- Added a local Homepage editor to reorder, hide, restore, and reset cards without changing their existing actions.
+- Added comfortable/compact timetable density and a preferred opening page under Settings → Personalization.
+- Added the customizable School Year Progress card with completed/remaining days, milestones, reliable grading-period progress, editable dates, and combined weekend/holiday counting controls.
+- Progress reuses cached PRONOTE grading periods and agenda holiday ranges, works offline, and clearly reports missing date information instead of guessing.
+- Added French/English support and matching Scoly Light, Dark, and PROnote Classic presentation.
+
 # Scoly 5.6.0
 
 ## 5.6.0 — Find Everything
