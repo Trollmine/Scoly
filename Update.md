@@ -1,3 +1,12 @@
+# Scoly 5.9.5
+
+## 5.9.5 — Access management & safe diagnostics
+
+- Added a clearer My Scoly Access summary with level, included capabilities, license type, status, expiration and verification state.
+- Improved invalid, expired, revoked, offline and recovery-safe license handling without displaying activation secrets.
+- Added share-safe Scoly Diagnostics for app/device, connections, module sync timestamps and error codes, notification/background status, and cache health.
+- Added copy, text export and error-history clearing; clearing diagnostics never removes school data or settings.
+
 # Scoly 5.9.4
 
 ## 5.9.4 — Admin level selector polish
