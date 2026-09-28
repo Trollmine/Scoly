@@ -1,3 +1,11 @@
+# Scoly 5.9.4
+
+## 5.9.4 — Admin level selector polish
+
+- Removed the awkward decorative frame surrounding the Admin access-level selector.
+- The selector itself now changes identity with the chosen tier: neutral Free, purple Paid, or pink-purple Insider.
+- Applied the same behavior to key generation and License Details.
+
 # Scoly 5.9.3
 
 ## 5.9.3 — Consistent Insider identity
