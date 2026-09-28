@@ -1,3 +1,32 @@
+# Scoly 6.0.3
+
+## 6.0.3 — Simpler Settings
+
+- Reduced Settings from five tabs to three: Appearance, Preferences, and Access & support.
+- Grouped Notifications with Personalization, and My Scoly Access with Diagnostics.
+- Preserved existing direct routes to School Year Progress and Diagnostics, including automatic scrolling to the requested section.
+- Made all three tabs fit cleanly without a second horizontally scrolling navigation bar.
+
+# Scoly 6.0.2
+
+## 6.0.2 — Navigation reliability
+
+- Bottom navigation now resynchronizes after every drawer destination, including a proper More state for secondary pages.
+- Serialized page transitions prevent rapid swipes or taps from creating overlapping, blinking layers.
+- Quick consecutive swipe steps are buffered instead of ignored, so left-then-right reliably performs both movements.
+- Reversing direction inside one unfinished gesture cancels safely instead of opening the wrong tab.
+- Fixed Scoly Colors radio-button padding and alignment across the two-column palette grid.
+
+# Scoly 6.0.1
+
+## 6.0.1 — V6 touch & palette polish
+
+- Made the whole page a high-priority horizontal swipe surface, including Calendar day buttons, with faster finger tracking and accidental-tap suppression.
+- Improved bottom-tab press feedback and shortened directional transitions.
+- Fixed the V6 drawer and scrim so the sticky header can no longer overlap the menu.
+- Expanded every palette into a complete Light/Dark color system covering backgrounds, surfaces, outlines, shadows, decorative colors and overlays.
+- Removed remaining palette-dependent purple shadows and drawer accents while preserving intentional category and access-level identities.
+
 # Scoly 6.0.0
 
 ## 6.0.0 — The New Scoly
