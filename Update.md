@@ -1,3 +1,42 @@
+# Scoly 5.9.3
+
+## 5.9.3 — Consistent Insider identity
+
+- Beta now uses the exact same smooth pink-to-purple Level 3 frame as Admin Panel, including while online verification is pending.
+- Removed the striped locked border and duplicate “Level 3” suffix; the Insider badge and explanatory text remain clear.
+
+# Scoly 5.9.2
+
+## 5.9.2 — Verified premium access & clearer identities
+
+- Level 2 and Level 3 capabilities now require a successful online license verification in the current app session; cached school data and Level 1 remain available offline.
+- Paid and Insider features now use full-card gradients instead of relying on small badges alone.
+- Admin Panel is now a named Level 3 Insider entitlement with matching drawer styling and online verification before opening.
+- Key generation and License Details both expose clearly styled Level 1/2/3 selectors; changing a level remains separate from duration and takes effect at the app's next verification.
+
+# Scoly 5.9.1
+
+## 5.9.1 — Paid/Insider identity & Admin access
+
+- Made PROnote Classic a named Level 2 Paid entitlement without hardcoding a numeric-level check into Appearance.
+- Added a clear purple Paid diamond and outline to Level 2 features.
+- Added a distinct pink-purple gradient Insider star and border to Level 3 features such as the Beta update channel.
+- Level 1 users selecting PROnote Classic receive the shared access explanation; losing the entitlement safely returns the interface to Scoly.
+- Added Admin Panel under More → App & account, opening the hosted Cloudflare dashboard while retaining its server-side Google administrator check.
+
+# Scoly 5.9.0
+
+## 5.9.0 — Access Levels & V5 Finale
+
+- Added independent Level 1 Free, Level 2 Paid and Level 3 Insider access, resolved through a centralized named-entitlement map.
+- Added a safe database migration that preserves every existing activation, duration and expiration while assigning pre-5.9 keys to Level 2 Paid.
+- Activation, verification, Google linking and recovery now return server-authoritative access claims; the last validated claim remains available offline.
+- Extended Scoly Admin with level selection, level filters, level editing, clear badges and optional entitlement overrides without coupling access to duration.
+- Added an Access page in Settings with the validated tier, separate duration information and Stable/Beta channel controls.
+- Added an Insider-only Beta channel to the existing updater; online use revalidates entitlement and loss of Insider access returns safely to Stable.
+- Added explicit Stable/Beta build and channel labels, French/English copy, accessible locked-option explanations and matching Scoly theme styling.
+- Existing Scoly features remain unlocked until the permanent feature split is deliberately configured through named entitlements.
+
 # Scoly 5.8.2
 
 ## 5.8.2 — Current-week insights
