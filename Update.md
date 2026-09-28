@@ -1,3 +1,26 @@
+# Scoly 5.5.1
+
+## 5.5.1 — Android build fix
+
+- Corrected the Next Course notification and widget alarm ID to an integer.
+- Updated Android to version **5.5.1**, `versionCode 106`.
+
+# Scoly 5.5.0
+
+## 5.5.0 — Scoly on Android
+
+- Added offline Next Course, Today and Homework / My School Day home-screen widgets.
+- Added an optional next-course notification in Appearance settings; it updates around course boundaries and stays off by default.
+- Widgets use the existing cached timetable, homework and personal data and follow language and appearance settings.
+- Updated Android to version **5.5.0**, `versionCode 105`.
+
+# Scoly 5.4.5
+
+## 5.4.5 — More menu dividers
+
+- Restored the original full-width subtle line above every item in the More panel.
+- Updated Android to version **5.4.5**, `versionCode 104`.
+
 # Scoly 5.4.4
 
 ## 5.4.4 — Drawer polish
