@@ -1,4 +1,13 @@
-# Scoly 5.9.5
+# Scoly 6.0.0
+
+## 6.0.0 — The New Scoly
+
+- Added the V6 bottom navigation shell with finger-following horizontal swipes and matching directional tab transitions.
+- Added safe V6 / Scoly Legacy switching while keeping the same screens, repositories, sync, licensing and offline data.
+- Added eight centralized Scoly palettes with Light, Dark and System modes; PROnote Classic remains available separately.
+- Added two locally configurable V6 shortcuts with duplicate protection.
+- Improved French dynamic dates, locale-aware formatting and added a development translation audit API.
+- Preserved existing deep links, Android back handling, accessibility scaling and every V5 feature.
 
 ## 5.9.5 — Access management & safe diagnostics
 
