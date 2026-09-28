@@ -1,3 +1,71 @@
+# Scoly 6.0.11
+
+## 6.0.11 — Homepage theme repair
+
+- Reverted the legacy Homepage style promotion that incorrectly forced white V4 surfaces into dark V6 palettes.
+- Partial swipes now temporarily reuse the real Homepage mode, producing the same layout as the settled page without overriding V6 colors.
+- Kept the corrected palette-colored backdrop behind the rounded V6 header.
+
+# Scoly 6.0.10
+
+## 6.0.10 — Seamless Homepage swipe
+
+- Removed the light legacy backdrop leaking around and underneath the rounded V6 header.
+- Applied the remaining V4 Homepage presentation rules consistently to cached, partially sliding and settled Homepage states.
+- Eliminated the final spacing and geometry jump at the end of a Homepage swipe.
+
+# Scoly 6.0.9
+
+## 6.0.9 — Correct partial swipes
+
+- Fixed the Homepage losing its V6 card, button and spacing styles while only partly visible during a swipe.
+- Cached and incoming Homepage layers now carry their complete page-local presentation before the tab snap finishes.
+- The shared header title now follows the visually dominant tab together with the bottom-navigation selection.
+
+# Scoly 6.0.8
+
+## 6.0.8 — Complete swipe pages
+
+- Fixed the remaining blank-page swipe by preventing the old global Homepage mode from hiding V6's cached and incoming Homepage.
+- Cached page contents now remain visible for the complete finger-following transition, before the destination becomes active.
+- Removed timetable PDF export and PDF timetable import from the V6 interface; Scoly Legacy keeps its existing PDF tools.
+
+# Scoly 6.0.7
+
+## 6.0.7 — Always-painted tab cache
+
+- Fixed cached Homework and other tabs occasionally sliding in as an empty background.
+- Cached primary pages now stay mounted just outside the viewport instead of becoming hidden after every snap.
+- Removed deferred off-screen painting so previously rendered cards remain visible throughout repeated swipes.
+- Preserved per-tab content, state and vertical scroll positions without re-rendering during navigation.
+
+# Scoly 6.0.6
+
+## 6.0.6 — Persistent tab cache
+
+- Primary V6 tabs now keep their rendered DOM instead of rebuilding when a swipe finishes.
+- Each tab remembers its own vertical scroll position and previews that exact position while sliding into view.
+- Cached pages are warmed progressively in the background so their content is already visible during a swipe.
+- Data updates invalidate and refresh only the affected cached pages; ordinary navigation performs no content render.
+
+# Scoly 6.0.5
+
+## 6.0.5 — Instant swipe start
+
+- Removed synchronous route rendering from the beginning of every swipe.
+- Cached bottom-navigation geometry so finger movement no longer triggers forced layout measurements.
+- Avoided measuring every hidden page and let off-screen pager pages skip unnecessary rendering work.
+- Prepared the lightweight pager layers on touch-down, before the first visible finger movement.
+
+# Scoly 6.0.4
+
+## 6.0.4 — Continuous tab pager
+
+- Replaced queued one-page swipes with one continuous horizontal pager whose tab positions act as snap points.
+- Pages and bottom-navigation selection now follow the finger from the same fractional position.
+- Removed the animation lock and timed swipe suppression, allowing immediate direction changes during dragging or settling.
+- Added velocity-aware snapping and multi-tab swipes without sacrificing normal vertical scrolling or button taps.
+
 # Scoly 6.0.3
 
 ## 6.0.3 — Simpler Settings
