@@ -1,3 +1,13 @@
+# Scoly 6.0.20
+
+## 6.0.20 — Communication and Information repair
+
+- Fixed Information & Surveys being opened and immediately hidden by the V6 navigation layer.
+- Aligned PRONOTE news synchronization with Papillon's single-request Pawnote flow and hardened optional survey/attachment fields.
+- Added an independent Information & Surveys diagnostic status so a Discussions success can no longer hide its sync failure.
+- Separated cafeteria refresh failures from Communication diagnostics, preserved saved menus after a failed refresh and stopped false cafeteria timestamps.
+- Successful refreshes now clear the matching recovered diagnostic error.
+
 # Scoly 6.0.19
 
 ## 6.0.19 — V6 cached-page scroll repair
