@@ -1,4 +1,20 @@
-# Scoly 6.0.28
+# Scoly 6.1.1
+
+- Centered account rows with wider, shorter cards and compact long names.
+- Added Modify and available Delete actions to the right of each account card.
+- Modify opens the existing editor for that account without switching accounts.
+- Removed the white focus outline around the PRONOTE synchronization dialog.
+- Restored JavaScript dialogs in PRONOTE and ALISE ENT login windows, plus mobile viewport handling and PRONOTE keyboard resizing.
+
+# Scoly 6.1.0
+
+## 6.1.0 — Multiple Accounts
+
+- Added stable local Student, Parent and Custom profiles with immediate cached account switching.
+- Isolated school data, PRONOTE/ALISE links, sync state, reminders, diagnostics and personal school content per account.
+- Added expandable parent/child account groups, safe local deletion and single-account migration.
+- Bound widgets, background sync and notification deep links to explicit account contexts.
+- Kept language, palette, appearance, interface and app-wide personalization shared across profiles.
 
 ## 6.0.28 — Complete Information content
 
