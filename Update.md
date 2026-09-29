@@ -1,3 +1,19 @@
+# Scoly 6.1.3
+
+## 6.1.3 — Native ENT Confirm routing
+
+- Fixed the regional ENT identity Confirm action again using a restricted Android bridge instead of relying on WebView form navigation.
+- The chooser patch now survives dynamically replaced page content and routes the selected official provider from Android itself.
+- Applied the same repair to PRONOTE and ALISE without changing account, sync or cached-data behavior.
+
+# Scoly 6.1.2
+
+## 6.1.2 — ENT connection repair
+
+- Fixed the Auvergne-Rhône-Alpes ENT identity chooser whose Confirm button could remain inert inside Android WebView.
+- Replaced the ineffective JavaScript-dialog workaround with a targeted, secure CAS form navigation handler shared by PRONOTE and ALISE.
+- Kept the normal student and parent PRONOTE paths, cached data and per-account sessions unchanged.
+
 # Scoly 6.1.1
 
 - Centered account rows with wider, shorter cards and compact long names.
