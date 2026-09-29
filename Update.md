@@ -1,3 +1,83 @@
+# Scoly 6.0.28
+
+## 6.0.28 — Complete Information content
+
+- Fixed the real cause of blank Information & Surveys details: PRONOTE only returns titles in the list response, so Scoly now performs the required authenticated detail request for each unique item.
+- Reads complete bodies from `detailsActualite.listeQuestions`, including normal student-account information and surveys.
+- Saves resolved bodies and attachments into the existing offline Communication cache; opening an item never needs a new network request.
+- A failed individual detail no longer discards successful items, while a completely failed detail pass preserves the previous cache instead of replacing it with blank records.
+- Added executable regressions for title-only list responses, the exact PRONOTE request payload, duplicate request suppression and failed-detail cache protection.
+
+# Scoly 6.0.27
+
+## 6.0.27 — Student Information and Android resume audit
+
+- Replaced connection-scoped PRONOTE news IDs with a stable semantic identity, so an existing 92-item cache is collapsed immediately instead of growing after every synchronization.
+- Duplicate cleanup keeps locally seen state, attachments and the richest available body rather than letting a later empty copy overwrite it.
+- Added support for Papillon-style rich Information bodies (`html_content`) and nested PRONOTE text containers used by normal student accounts.
+- Information duplicates returned through multiple PRONOTE display modes are merged before they reach local storage.
+- Replaced the Xiaomi/WebView software-to-hardware layer reset with a native resume cover that disappears only after Android confirms a newly rendered frame.
+- Added executable regressions for rotating news IDs, existing-cache migration, nested rich bodies, empty duplicate bodies and Android visual-state resume handling.
+
+# Scoly 6.0.26
+
+## 6.0.26 — Information runtime repair
+
+- Fixed the `ReferenceError` that stopped Information & Surveys synchronization in 6.0.25.
+- Removed the final stale resource-ID property from the Information mapper.
+- A successful synchronization now collapses previously accumulated duplicate entries into their real PRONOTE identities.
+- Duplicate cleanup preserves any locally seen state and installs the newest title, metadata and full body content.
+- Added an executable mapper regression test that verifies multi-part Information body content instead of only inspecting source patterns.
+
+# Scoly 6.0.25
+
+## 6.0.25 — Information deduplication and Android resume repair
+
+- Fixed Information & Surveys duplicating after every synchronization when PRONOTE changed the selected resource/session identifier.
+- Information now uses its own PRONOTE identifier, independent of the current account-resource identifier.
+- Items without a server identifier use a deterministic fallback fingerprint instead of their changing list position.
+- Existing duplicate identities collapse during the next successful synchronization while preserving locally seen state.
+- Fixed the stale full-screen coral/pink WebView frame that could remain after returning from the Android home screen until the display was touched.
+- V6 now settles interrupted page gestures before pausing, and Android rebuilds the stale rendering layer when Scoly resumes.
+
+# Scoly 6.0.24
+
+## 6.0.24 — Persistent seen state and themed notifications
+
+- Information & Surveys now merges synchronized items by stable identity instead of replacing the local feed.
+- Items already opened remain seen after later synchronizations, while new and updated items are added safely.
+- Cached Information entries remain available offline when a later response omits them.
+- The notification drawer now follows every Scoly palette in both Legacy and V6, including light and dark surfaces, text, accents, borders and shadows.
+
+# Scoly 6.0.23
+
+## 6.0.23 — Information content repair
+
+- Fixed Information details showing a title, author and date but an empty body.
+- PRONOTE information body blocks are now merged instead of keeping only the first empty acknowledgement/control block.
+- Content selection now ignores empty strings and preserves every distinct non-empty body section.
+- Attachments from every information block are merged and deduplicated.
+- Information items with multiple body blocks remain Information items instead of being misclassified as surveys.
+
+# Scoly 6.0.22
+
+## 6.0.22 — Student Information & Surveys decoder repair
+
+- Fixed the real `TypeError` that could discard an entire Information & Surveys response for normal student accounts.
+- Added support for both PRONOTE News collection shapes used across server versions.
+- A malformed optional category, question, choice, attachment or date can no longer hide every other valid information item.
+- News modes are merged and deduplicated instead of assuming the first returned mode contains the complete feed.
+- Added a regression fixture confirming that all 16 student information items survive the decoder result.
+
+# Scoly 6.0.21
+
+## 6.0.21 — Information feed and read-only Communication
+
+- Fixed parent-account Information & Surveys synchronization by using PRONOTE's account-level News request instead of incorrectly attaching the selected-child member scope.
+- Kept child scoping on timetable, homework, grades, discussions and other pupil-data pages.
+- Removed message creation from Communication in PROnote Classic, Scoly Legacy and Scoly V6, including the send/recipient connector behind the `+` button.
+- Refreshed the WebView asset cache so the corrected News client is installed immediately.
+
 # Scoly 6.0.20
 
 ## 6.0.20 — Communication and Information repair
