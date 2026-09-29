@@ -1,3 +1,12 @@
+# Scoly 6.1.4
+
+## 6.1.4 — ENT WebView lifecycle repair
+
+- Removed MainActivity's process-wide WebView timer pause, which also froze layout, parsing and JavaScript in the separate PRONOTE/ENT and ALISE login Activities.
+- Added explicit login WebView resume handling and defensive timer recovery.
+- Removed the speculative Confirm-button interception and native chooser bridge; the official ENT now owns its normal form and identity-provider navigation again.
+- Added a source regression guard for Activity handoff and global timer suspension. Device sign-in still requires verification on Android.
+
 # Scoly 6.1.3
 
 ## 6.1.3 — Native ENT Confirm routing
