@@ -1,3 +1,71 @@
+# Scoly 6.0.19
+
+## 6.0.19 — V6 cached-page scroll repair
+
+- Fixed short V6 tabs inheriting the vertical scroll range of taller off-screen cached tabs.
+- Cached destinations remain rendered for smooth horizontal swiping, but are now clipped to the active page and can no longer create a large empty area below Homework, Grades or other shorter pages.
+
+# Scoly 6.0.18
+
+## 6.0.18 — V6 scroll bounds and Paid access
+
+- Removed the duplicated V6 bottom spacer that let shorter tabs scroll into empty space.
+- Preserved each tab's useful scroll position while clamping it to the selected page's real height after a swipe or tab change.
+- Moved the Scoly V6 interface entitlement from Level 3 Insider to Level 2 Paid, including safe cached-claim migration and authoritative license API mapping.
+
+# Scoly 6.0.17
+
+## 6.0.17 — Legacy isolation repair
+
+- Fixed the blank Scoly Legacy Homepage caused by the hidden V6 cache warmer continuing to change page visibility.
+- V6 cache warming, invalidation, paging, resume handling and idle work now stop completely outside the V6 interface.
+- Switching from V6 to Legacy cancels pending animation/idle work, removes every pager transform and restores the current page through its existing Legacy opener.
+- PROnote Classic remains independent and is no longer touched by V6 cleanup or page restoration.
+
+# Scoly 6.0.16
+
+## 6.0.16 — V6 navigation rollback and layer reset
+
+- Removed the 6.0.15 drawer transaction that could leave whole pages shrunken, translated or scattered across the screen.
+- Drawer choices now use one explicit V6 route path for primary tabs and a separate clean handoff for secondary pages.
+- Interrupted swipes now clear every pager class, inline transform, absolute position and temporary compositor state before another page opens.
+- Added a defensive normal-flow reset so a stale Android WebView frame cannot keep carousel geometry after navigation.
+
+# Scoly 6.0.15
+
+## 6.0.15 — Deterministic V6 routing
+
+- Replaced the global drawer click interceptor with an explicit route transaction that runs exactly once per page selection and never on the nested legacy button or Close action.
+- Cancelled pending cache frames before navigation and validate the expected visible route before any delayed page parking can run.
+- Audited every Homepage, Timetable, Homework, Calendar, Grades, My School Day, Todo, Student Administration, Communication and Insights opener so Search/Insights cannot remain stacked over another page.
+- Preserved the Android resume repaint and safe cached-page z-order from 6.0.14.
+
+# Scoly 6.0.14
+
+## 6.0.14 — V6 layer and resume reliability
+
+- Drawer destinations now dismantle transformed swipe/cache layers before their existing page opener runs.
+- Normal pages always paint above inactive cached tabs, preventing an old swipable page from covering My School Day, Calendar, Timetable or More destinations.
+- Interrupted gestures and settling animations are finalized when Scoly is backgrounded.
+- Android now restores the WebView and explicitly rebuilds/repaints V6 navigation when the app resumes, fixing the touch-to-remove blank screen.
+
+# Scoly 6.0.13
+
+## 6.0.13 — Drawer-to-tab cache repair
+
+- Fixed Calendar sometimes displaying the previously selected Grades page after opening it from the drawer.
+- Fixed Homework and Timetable becoming empty after drawer navigation.
+- Drawer handlers can now reclaim a previously cached tab safely before the V6 navigation observer parks pages again.
+
+# Scoly 6.0.12
+
+## 6.0.12 — V6 navigation audit & Insider access
+
+- Fixed cached Homepage layers covering Calendar, My School Day, Grades, Insights, Communication and other drawer destinations.
+- Horizontal paging now starts only after a real swipe, while taps and vertical scrolling remain responsive.
+- Calendar and Communication are rendered before entering the cached page strip, and interrupted navigation is cleaned up safely.
+- Scoly V6 is now a Level 3 Insider interface with online entitlement verification; Scoly Legacy remains the safe fallback.
+
 # Scoly 6.0.11
 
 ## 6.0.11 — Homepage theme repair
