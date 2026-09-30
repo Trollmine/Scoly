@@ -1,3 +1,31 @@
+# Scoly 6.1.7
+
+## 6.1.7 — Widget restraint & real Follow System
+
+- Removed the oversized widget side rail and corner circle that overwhelmed the content.
+- Kept a restrained palette-tinted surface, compact badge and small row markers, with long lines safely ellipsized.
+- Added useful tap guidance to otherwise empty finished-day and no-task widget states.
+- Fixed Follow System across the whole app and widgets by reading Android’s real night-mode configuration instead of trusting the light-forced WebView media query.
+- Refreshes the resolved system appearance when Scoly returns from the background.
+
+# Scoly 6.1.6
+
+## 6.1.6 — Richer themed widgets
+
+- Rebuilt the live Android widget presentation with palette-tinted surfaces instead of nearly white blank cards.
+- Added a strong palette accent rail, compact widget-type badges, row markers and a subtle decorative color layer.
+- Preserved every widget’s existing data, deep links, responsive sizes, offline states and account context.
+- Added regression checks for the live widget layout and palette-driven rendering.
+
+# Scoly 6.1.5
+
+## 6.1.5 — Expanded Scoly Colors
+
+- Added Mono, Wine, Olive and Autumn palettes with distinct Light, Dark and Follow System variants.
+- Extended the semantic palette tokens across headers, navigation, surfaces, overlays and Android widgets.
+- Removed the redundant Sky choice and safely migrated existing Sky selections to Ocean.
+- Added French palette names and a source-level palette/contrast regression audit.
+
 # Scoly 6.1.4
 
 ## 6.1.4 — ENT WebView lifecycle repair
