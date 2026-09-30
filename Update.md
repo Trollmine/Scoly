@@ -1,3 +1,57 @@
+# Scoly 6.1.13
+
+## 6.1.13 — Preserve the ENT return to PRONOTE
+
+- Start ENT login through the selected PRONOTE mobile account space so the official SSO flow creates its return address. Opening the bare ENT portal directly could leave successful login on a portal page saying it cannot direct the requested page.
+- Preserve mobile validation cookies and device identity, then reuse token capture, encrypted session storage, login-window closure and the final account refresh.
+- Keep direct PRONOTE login and student/parent space selection unchanged.
+
+# Scoly 6.1.12
+
+## 6.1.12 — Correct PRONOTE and ENT login pages
+
+- The PRONOTE option opens the official direct PRONOTE login page, rather than Scoly’s manual credential form.
+- The ENT option opens the school’s published CAS/ENT portal with mobile token preparation; its return to PRONOTE completes the existing secure connection.
+- Preserve student/parent selection and refresh only after linking. Keep manual credential fallback available.
+- When no ENT portal is published, use the school’s mobile entry without forcing direct login.
+
+# Scoly 6.1.11
+
+## 6.1.11 — Connect before refreshing
+
+- Creating a Student or Parent account immediately opens school selection and ENT/PRONOTE login without refreshing the app first.
+- Switch the login connector and encrypted token storage to the new account in memory. Refresh once after successful login, including parent-child selection.
+- Keep failed or incomplete security verification open for retry; closing setup explicitly refreshes into the new local account.
+- Pause data synchronization during new-account setup so the previous page’s stores cannot receive another account’s data.
+
+# Scoly 6.1.10
+
+## 6.1.10 — Connect new student and parent accounts
+
+- Open Find your school automatically after creating either a Student or Parent account, then offer PRONOTE and ENT sign-in.
+- Persist the setup handoff with the new account and open it once the school finder is ready. Account reloads no longer depend on a temporary browser-session flag.
+- Custom accounts stay local-only. Existing linked accounts and parent-child synchronization keep their existing behavior.
+
+# Scoly 6.1.9
+
+## 6.1.9 — School connection choices & polished controls
+
+- Consistent rounded, padded school-finder controls, including Search, nearby schools, Close, Back and manual address fallback.
+- Selected establishment is a labelled, non-interactive summary, visually separate from login options.
+- Offer PRONOTE direct credentials and ENT official website login using the existing authentication paths and account-specific school endpoint. Unknown ENT availability is clearly explained.
+- French/English labels and palette-aware interaction states.
+
+# Scoly 6.1.8
+
+## 6.1.8 — Find your school & compact profile header
+
+- Student and Parent setup now starts with school discovery, before choosing a connection method. Custom accounts remain local-only; later school linking uses the same finder.
+- Search the national school directory by name, city or postal code, or optionally find nearby schools through PRONOTE’s published directory. Location permission is requested only after tapping the nearby action; location is not stored or tracked.
+- Resolve published PRONOTE endpoints and inspect available account spaces/CAS before presenting the official login method. Ambiguous establishments require explicit confirmation; unpublished schools retain manual address, QR and credential fallbacks.
+- Reuse the existing PRONOTE/ENT authentication and parent-child sync. School choices are scoped to the current local account; late results cannot connect another profile.
+- Keep the V6 avatar and full account name together, left-aligned with compact spacing and ellipsis. Completed taps open the chooser; swipes never open it, including out-and-back gestures.
+- Personal greetings use the last non-empty name component: ROCHE-GUILLODO Mathis → Hi, Mathis. Full profile names are unchanged.
+
 # Scoly 6.1.7
 
 ## 6.1.7 — Widget restraint & real Follow System

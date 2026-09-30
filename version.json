@@ -1,6 +1,6 @@
 {
-  "version": "6.1.7",
-  "versionCode": 160,
+  "version": "6.1.13",
+  "versionCode": 166,
   "channel": "stable",
   "apkUrl": "https://raw.githubusercontent.com/Trollmine/Scoly/main/Scoly.apk"
 }
