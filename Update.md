@@ -1,3 +1,67 @@
+# Scoly 6.1.24
+
+- Map pink Timetable header and Course2 to the exact same coral/secondary theme role; remove the unrelated primary blend.
+- Use the primary strong role for deep purple holes while keeping the shared primary faces and their shadows.
+- Preserve icon size and silhouette outline.
+
+# Scoly 6.1.23
+
+- Keep the v6.1.21 icon size and original canvas. Thicken only the complete silhouette outline, with no internal layer strokes.
+
+# Scoly 6.1.21
+
+- Enlarge custom Home and Timetable navigation artwork by 30% while preserving navigation layout, labels, colors and geometry.
+
+# Scoly 6.1.20
+
+- Replace per-layer strokes with one thin outline around the complete icon silhouette. Internal faces and colors remain untouched.
+
+# Scoly 6.1.19
+
+- Correct the displayed app version, updater version and diagnostics fallback.
+- Add thin theme-aware edges to custom Home and Timetable layers for visibility without changing their geometry or fills.
+
+# Scoly 6.1.18
+
+- Replace Home and Timetable navigation icons with the supplied custom SVG geometry.
+- Share semantic icon colors across active Scoly palettes, preserving all main/shadow and timetable color groups.
+
+# Scoly 6.1.17
+
+## 6.1.17 — Choose your Grades+ graph style
+
+- Add a Graph style chooser below the Overall evolution header: Line (default), Area, Bars and Dots.
+- Apply the saved preference to overall and subject evolution charts while retaining their theme and subject colors, estimated cumulative averages and /20 scale.
+- Keep expanded subject sections when changing styles. Provide French and English labels and an accessible native select.
+- Validate all four SVG styles, single/empty graphs, persistence and invalid-value fallback. Live Android verification remains necessary.
+
+# Scoly 6.1.16
+
+## 6.1.16 — Clean existing repeated attachments across sessions
+
+- Correct the previous assumption that PRONOTE attachment IDs remain stable: match attachment slots across sessions even when IDs and encrypted download paths both change.
+- Clean saved Information/Survey and discussion attachments on startup, during synchronization and when displaying messages. Keep the newest download links.
+- Preserve multiple same-named files present within one session and distinct external links.
+- Validate with 12 focused checks, including 11 cached repeated pairs collapsing to two attachments in the actual message display path. Live Android verification remains necessary.
+
+# Scoly 6.1.15
+
+## 6.1.15 — Fix repeated Communication attachments
+
+- Merge attachments using their remote file identity rather than their session-specific download URLs. Keep the latest link when the same file is synchronized again.
+- Apply the same attachment merge to Information/Surveys, discussion messages, and fetched detail/question attachments.
+- Clean duplicate attachments from the local Communication cache on startup, without requiring another successful sync.
+- Preserve distinct file IDs with the same filename and distinct external link query parameters.
+
+# Scoly 6.1.14
+
+## 6.1.14 — ENT means ENT, never direct PRONOTE fallback
+
+- Disable the ENT choice with a clear explanation when discovery does not publish an ENT/CAS login URL for the selected PRONOTE address. Do not silently open a PRONOTE credential page under an ENT label.
+- Verified ENT login opens the published HTTPS CAS route. Preserve its service callback; add the selected mobile PRONOTE space as service when the published URL lacks one.
+- Keep mobile-token validation cookies and existing secure token capture. An unavailable ENT route is reported without navigating to direct PRONOTE.
+- Live school-specific SSO still requires Android verification; this version does not invent a missing school login route.
+
 # Scoly 6.1.13
 
 ## 6.1.13 — Preserve the ENT return to PRONOTE
