@@ -1,3 +1,88 @@
+# Scoly 6.2.5 — Reliability audit
+
+- Fixed parent/child synchronization and profile isolation, preserving account caches across unambiguous remote ID changes.
+- Fixed local data refresh, search editor navigation, lesson edit indexing, overdue tasks and duplicate recent grades.
+- Improved Android external navigation, file selection, sign-in delivery, lifecycle handling, reminders and multi-account widgets.
+- Restored missing offline dependencies and avoided rebuilding the curve tooltip on every drag frame.
+- Kept cached Communication usable when a startup migration cannot write because storage is full.
+- Added audit regression checks. See AUDIT.md for coverage, verification and remaining device/build checks.
+
+# Scoly 6.2.4 — Direct peel tracking
+
+- Calculate the peel crease from the perpendicular bisector of the original corner and its held position. Follow horizontal and vertical finger displacement directly, retaining the initial grab offset.
+- Initialize peel geometry after the dialog opens and guard against zero-sized frames. Remove the arrow.
+- Keep the ticket cap aligned during seam tracing; detach it with one consistent completion motion.
+
+# Scoly 6.2.3 — Discovery shape fixes
+
+- Clip the sticker face and reflected underside to the same rounded perimeter. Remove oversized underside shading and make the corner cue follow the fold.
+- Match constellation SVG coordinates to the frame dimensions and preserve star proportions.
+- Attach both pan strings to each beam endpoint and counter-rotate the pans around those joints.
+
+# Scoly 6.2.2 — Discovery refinements
+
+- Rework the sticker as a top-right diagonal corner fold with a reflected paper underside.
+- Rework the ticket as a top-seam pack tear: the cap detaches and the wrapper moves away from the grade.
+- Randomize constellation layouts and show actual five-point stars.
+- Replace the balance visuals with hanging pans and a separate sliding rail.
+- Incomplete peel, ticket and constellation gestures smoothly return on release or cancellation. Completed gestures reveal normally; scratch progress still persists.
+
+# Scoly 6.2.1 — More Grade Discoveries
+
+- Add peel-off sticker, ordered constellation tracing and balance-scale discovery, including random selection and Insider Tests.
+- Preserve peeling and constellation progress between gestures. Balance requires a steady hold, cancelled on release or movement away from the balance point.
+- Improve ticket ripping with a jagged tear edge and curling tab. Vault bolts retract before the door swings open.
+- Include French/English instructions, theme-aware surfaces and reduced-motion support.
+
+# Scoly 6.2.0 — Grade Discovery
+
+- Discover new grades with five interactive events: scratch card, sealed envelope, flipping card, tear-open ticket and locked vault.
+- Pull the ticket strip to the right; progress persists across gestures. Turn the vault dial clockwise for one complete revolution to unlock the mark.
+- Level 3 Insider Tests includes all five events, random selection and fictional subjects, grades and coefficients. Test records never enter school data.
+- All events offer direct reveal, current theme colors, French/English and reduced-motion support.
+
+# Scoly 6.1.31
+
+- Remove overlapping whole-card rotation during the front/back reveal; use one continuous flip.
+- Restore the original monochrome Home icon and hide the top-right search button in PRONOTE Classic. Theme switching preserves the appropriate header icons.
+
+# Scoly 6.1.30
+
+- Share grouped sections and menu button styling across the main and secondary More menus. Remove trailing arrows from Insider actions.
+- Fade the remaining scratch coating progressively as cleared coverage grows, then smoothly finish the reveal.
+- Put the Scoly logo on the envelope seal.
+- Add branded front/back card faces with a continuous 3D flip reveal and reduced-motion support.
+
+# Scoly 6.1.29
+
+- Replace scratch fading with a locally erased canvas coating. Cleared pixels and reveal progress persist across separate strokes; repeated rubbing of the same patch does not inflate coverage.
+- Add envelope folds, seal and a letter reveal with swipe progress.
+- Style Tests with the shared Insider border and badge.
+
+# Scoly 6.1.28
+
+- Discover new synchronized grades with a random rub-to-reveal card, swipe envelope or flipping card. Show subject and coefficient before revealing the mark; direct reveal and dismissal are available.
+- Queue pending discoveries per account and avoid repeating historical grades on first synchronization.
+- Add Tests · Insider to the menu for Level 3 experimental access: random fictional grades, coefficients and subjects, with random or selected discovery events. Test grades never enter school data.
+- French/English, theme colors, reduced motion and keyboard reveal.
+
+# Scoly 6.1.27
+
+- Remove the curve frame focus highlight for tap/drag interactions in Android WebView. Keep keyboard focus indication and curve interaction unchanged.
+
+# Scoly 6.1.26
+
+- Add Curve+ alongside Line, Area, Bars and Dots in the existing Graph style chooser. Keep every style independently selectable and saved. Curve+ remains the default without a saved preference.
+- Keep Curve+ rendering and interactions unchanged.
+
+# Scoly 6.1.25
+
+- Add Curve+ as the default evolution style when no valid preference exists. Keep saved classic Line/Area/Bars/Dots choices.
+- Explore overall and subject evolution with direct horizontal dragging, a smooth selector and assessment tooltips; release snaps to real assessments.
+- Preserve existing cumulative weighting, official averages and exclusions. Show excluded numeric assessments as hollow points.
+- Add French/English labels, keyboard selection and empty/single-assessment handling.
+- Source tests pass. Android build and visual verification are blocked here by missing Gradle and browser executable.
+
 # Scoly 6.1.24
 
 - Map pink Timetable header and Course2 to the exact same coral/secondary theme role; remove the unrelated primary blend.
