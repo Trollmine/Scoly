@@ -1,3 +1,11 @@
+# Scoly 6.2.6 — Large timetable QR transfers
+
+- Larger Week A/B timetables now export as numbered QR codes instead of failing the single-code size limit. Smaller timetables keep their existing single-code format.
+- Scan all parts in any order; duplicate scans are ignored. The complete timetable is verified before the existing import preview is shown. No lessons or fields are removed.
+- Added Previous QR / Next QR controls, scan progress, FR/EN messages and integrity/account safeguards.
+- Both phones need Scoly 6.2.6 or newer for multi-part transfers. Existing single-code backups remain importable.
+- Added eleven QR export/import regression tests. See QR-FIX.md for validation and build limitations.
+
 # Scoly 6.2.5 — Reliability audit
 
 - Fixed parent/child synchronization and profile isolation, preserving account caches across unambiguous remote ID changes.
