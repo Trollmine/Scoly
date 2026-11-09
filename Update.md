@@ -1,3 +1,10 @@
+# Scoly 6.2.7 — Smoother gestures and automatic sync controls
+
+- The peel-off sticker now returns by moving its held corner back along the release direction, without twisting polygon edges. It can be grabbed again during the return without jumping and respects reduced motion.
+- Curve+ waits for horizontal touch intent, leaving vertical scrolling free of chart work. Horizontal updates run once per animation frame and reuse gesture geometry.
+- Disabled automatic synchronization categories stay disabled at launch, on resume, when reconnecting and during periodic checks. Course/grade alerts no longer force timetable or grade sync. Explicit refresh remains available.
+- Updated notification help in French and English. See FIXES-6.2.7.md for regression evidence and verification limits.
+
 # Scoly 6.2.6 — Large timetable QR transfers
 
 - Larger Week A/B timetables now export as numbered QR codes instead of failing the single-code size limit. Smaller timetables keep their existing single-code format.
